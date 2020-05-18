@@ -1,0 +1,15 @@
+{
+	//code
+	    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int n,i,s=0;
+        scanf("%d",&n);
+        for(i=n;i>0;i--)
+        s=s+i;
+        printf("%d\n",s);
+    }
+    
+	return 0;
+}

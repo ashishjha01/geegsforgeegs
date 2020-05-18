@@ -1,0 +1,38 @@
+
+int main() 
+{
+	/*code
+	
+   int t,n,temp;
+     scanf("%d",&t);
+    while(t--)
+        {
+        scanf("%d",&n);
+        //while(n--){
+       scanf("%d",&temp);
+        printf("%d ",temp);
+        }
+        printf("\n");
+    }
+return 0;
+}*/
+// that code is corret but not  able  to submit ,i don't know why  8-[
+//not ichhuk
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int n,i,a[100];
+	    scanf("%d",&n);
+	    for(i=0;i<n;i++)
+	    {
+	        scanf("%d ",&a[i]);
+	    }
+	    for(i=0;i<n;i++)
+	    {
+	        printf("%d ",a[i]);
+	    }
+	    printf("\n");
+	}
+	return 0;
+}

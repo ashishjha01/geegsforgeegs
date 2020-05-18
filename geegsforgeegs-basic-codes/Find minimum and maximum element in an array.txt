@@ -1,0 +1,27 @@
+
+int main() 
+{
+	//code
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int n;
+	    scanf("%d",&n);
+	    int ar[n],max,min,i;
+	    for(i=1;i<=n;i++)
+	    {
+	        scanf("%d",&ar[i]);
+	    }
+	    max=min=ar[1];
+	    for(i=2;i<=n;i++)
+	    {
+	        if(ar[i]<min)
+	        min=ar[i];
+	        if(ar[i]>max)
+	        max=ar[i];
+	    }
+	    printf("%d %d\n",min,max);
+	}
+	return 0;
+}

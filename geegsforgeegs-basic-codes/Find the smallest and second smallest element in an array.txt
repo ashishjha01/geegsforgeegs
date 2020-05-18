@@ -1,0 +1,36 @@
+	//code
+	    int t;
+    scanf("%d",&t);
+    while(t>0)
+    {
+        int n,min=1000,secmin=1000,i;
+        scanf("%d",&n);
+        int a[n];
+        for(i=0;i<n;i++)
+        {
+            scanf("%d",&a[i]);
+        }
+        for(i=0;i<n;i++)
+        {
+            if(a[i]<min)
+            {
+               secmin=min;
+               min=a[i];
+            }
+            else if(a[i]<secmin && a[i]!=min)
+            {
+                secmin=a[i];
+            }
+        }
+        if(secmin!=1000)
+        {
+            printf("%d% d\n",min,secmin);
+        }
+        else
+        {
+            printf("-1\n");
+        }
+        t--;
+    }
+	return 0;
+}

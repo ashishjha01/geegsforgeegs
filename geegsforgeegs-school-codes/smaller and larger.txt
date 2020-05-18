@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() 
+{
+	//code
+		int t,n,i,x,s,l;
+	scanf("%d",&t);
+	while(t>0)
+	{
+	    s=0;
+	    l=0;
+	    scanf("%d",&n);
+	    scanf("%d",&x);
+	    int a[n];
+	    for(i=0;i<n;i++)
+	    scanf("%d",&a[i]);
+	    for(i=0;i<n;i++)
+	    {
+	         if(a[i]<=x)
+	          s++;
+	         if(a[i]==x||a[i]>=x)
+	          l++;
+	    }
+	    printf("%d %d\n",s,l);
+	    t--;
+	}
+	return 0;
+}

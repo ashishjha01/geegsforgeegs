@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+	//code
+		
+	int t,n,d,temp;
+	scanf("%d",&t);
+	for(int i=0;i<t;i++)
+	{
+	    scanf("%d",&n);
+	    int arr[n];
+	    for(int j=0;j<n;j++)
+	    {
+	        scanf("%d",&arr[j]);
+	    }
+	    
+	    /*for(int j=0;j<n;j++)
+	    {
+	        printf("%d ",arr[j]);
+	         scanf("%d","/n");
+	    }*/
+	    
+	    scanf("%d",&d);
+	    for(int j=d;j<n;j++)
+	    {
+	            printf("%d ",arr[j]);
+	    }
+	    for(int j=0;j<d;j++)
+	    {
+	            printf("%d ",arr[j]);
+	    }
+	    printf("\n");
+	}
+	return 0;
+}
+	

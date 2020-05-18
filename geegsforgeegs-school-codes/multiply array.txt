@@ -1,0 +1,39 @@
+
+int main() 
+{
+	/*code
+		int t,i,n;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int m=0;
+	    scanf("%d",&n);
+	    int a[n];
+	    for(i=0;i<n;i++)
+	    {
+	         scanf("%d",&a[0]);
+	         m=m*a[i];
+	    }
+	    printf("%d\n",m);
+	}*/
+		int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int n;
+	    scanf("%d",&n);
+	    int a[n],i,multy=1;
+	    for(i=0;i<n;i++)
+	    {
+	      scanf("%d",&a[i]);
+	    }
+	     for(i=0;i<n;i++)
+	     {
+	        multy=multy*a[i];
+	     }
+	       printf("%d\n",multy);
+	}
+	return 0;
+}
+
+	
